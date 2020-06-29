@@ -1,0 +1,97 @@
+<div class="body-avistamiento" id="body-avistamiento">
+  <div class="subtitulo-avistamiento">
+    <h2>
+      Registra tus descubrimientos astronomicos
+    </h2>
+    <hr class="hr-av" />
+    <h3>
+      LLena formulario y envialo!
+    </h3>
+  </div>
+  <div class="formulario">
+    <form action="#">
+      <h2>Datos del Astronomo</h2>
+
+      <input type="text" name="nombre" placeholder="Ingrese su Nombre" />
+
+      <input type="text" name="dni" placeholder="Ingrese su Documento" />
+
+      <input type="text" name="direccion" placeholder="Ingrese su Dirección" />
+
+      <input type="text" name="telefono" placeholder="Ingrese su Telefono" />
+
+      <h2>Datos del Objeto</h2>
+
+      <input
+        type="text"
+        name="coordenadas"
+        placeholder="Ingrese las Coordenadas"
+      />
+
+      <input
+        type="text"
+        name="nombre-pro"
+        placeholder="Ingrese el Nombre Propuesto"
+      />
+
+      <label for="radio">Momento del dia</label>
+      <div class="radio">
+        <div class="radio1">
+          <input type="radio" name="momento" value="diurno" />Diurno
+        </div>
+        <div class="radio2">
+          <input type="radio" name="momento" value="nocturno" />Nocturno
+        </div>
+      </div>
+
+      <label for="ocupacion">Forma del Objeto</label>
+      <div class="select">
+        <select name="ocupacion">
+          <option value="redondeado">Redondeado</option>
+          <option value="ovalado">Ovalado</option>
+          <option value="lineal">Lineal</option>
+          <option value="rectangular">Rectangular</option>
+        </select>
+      </div>
+
+      <div class="section-captcha">
+        <label class="label-captcha">
+          Ingrese el Captcha
+        </label>
+        <div class="div-captcha">
+          <input
+            type="button"
+            value="Refrescar"
+            id="refrescar"
+            class="refrescar"
+          />
+          <div class="captcha">
+            <h3 id="captcha"></h3>
+          </div>
+          <span class="catcha-tip">¿Eres un humano?</span>
+        </div>
+        <div class="confirmacion-captcha">
+          <input
+            type="text"
+            name="confirmacionCaptcha"
+            id="confirmacionCaptcha"
+          />
+        </div>
+      </div>
+      <input
+        type="button"
+        value="Registrar"
+        id="btn-registrar"
+        class="btn-registrar"
+      />
+    </form>
+    <div class="" id="cap-rec">
+      captcha incorrecto
+    </div>
+
+    <div id="cap-acep">
+      REGISTRO EXITOSO
+    </div>
+  </div>
+  <script src="../js/avistamientos.js"></script>
+</div>

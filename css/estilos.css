@@ -1,0 +1,1059 @@
+/*  -----------------------------------    estilos generalesn ----------------------------------  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 3.5vw;
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+/*  -----------------------------------    header y navegacion ----------------------------------  */
+
+header {
+  padding: 0 0 0rem 0;
+  background: linear-gradient(to right, #fffde4, #005aa7);
+}
+
+.linea {
+  height: 0.5rem;
+  background-color: black;
+}
+
+.menu {
+  width: 3.5rem;
+  background-color: inherit;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.2rem;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  position: absolute;
+  display: none;
+  margin-top: 0rem;
+  width: 80%;
+  z-index: 10;
+}
+
+nav .botonera {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.logo-titulo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo-titulo h1 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.botonera .link {
+  list-style: none;
+  padding: 0.8rem 2rem;
+  font-weight: bolder;
+}
+
+.botonera .link:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: ease-in-out 0.3s;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+li.actual {
+  border-bottom: 0.2rem solid white;
+}
+
+.mostrarMenu {
+  display: block;
+}
+
+/*      FOOTER         */
+
+footer {
+  background-color: black;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.footer .texto-footer {
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+article.sociales {
+  display: flex;
+  order: -1;
+  justify-content: center;
+}
+
+.titulo-footer {
+  order: 5;
+}
+
+.logo-sociales img {
+  width: 2rem;
+  margin: 0 2rem;
+}
+
+footer .contacto {
+  margin: 0.7rem 0;
+}
+
+footer img:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+/*   HOME   */
+
+.presentacion {
+  background-image: url("../public/images/tierra.jpg");
+  width: 100%;
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0 0 0;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.presentacion .irA {
+  display: flex;
+  margin: 1rem 0 4rem 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.btn-ir {
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+.btn-ir a button {
+  text-align: center;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.2rem;
+  display: inline-block;
+  width: 70%;
+  background-color: #ffffff;
+  color: rgb(17, 16, 16);
+  font-size: 1rem;
+  background-color: rgba(201, 171, 1, 0.753);
+  cursor: pointer;
+}
+
+.btn-ir a button:hover {
+  color: white;
+}
+
+.presentacion h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.noticia img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.separador {
+  width: 0.5%;
+  background-color: rgba(201, 171, 1, 0.753);
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+}
+
+.noticias-astronomia {
+  margin: 1.5rem 0;
+}
+
+.noticias .cabezera-articulos {
+  background-color: #1c8df0;
+  display: inline-block;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.1rem 0.2rem;
+}
+
+.noticia {
+  margin: 0 0 2rem 0;
+}
+
+.ver-mas button a {
+  background-color: #e5cd99af;
+  border: none;
+  border-radius: 0.15rem;
+  padding: 0.2rem;
+  color: rgb(71, 63, 63);
+  text-decoration: none;
+  font-weight: bolder;
+}
+.ver-mas {
+  text-align: center;
+}
+
+.ver-mas button {
+  border: none;
+}
+
+.noticia h3 a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0.5rem 0 0 0;
+  display: inline-block;
+  padding: 0 0.2rem;
+  font-size: 1.5rem;
+}
+
+.noticia h3 a:hover {
+  text-decoration: underline;
+  color: rgb(22, 20, 20);
+}
+
+.noticia p {
+  padding: 0 0.2rem;
+}
+
+/*    Avistamiento       */
+
+.imagen-avistamiento {
+  padding: 1rem 0 0 0;
+}
+.imagen-avistamiento img {
+  width: 100%;
+  display: block;
+}
+
+.avistamiento {
+  background-image: url("../public/images/chica-avistamiento.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.texto-avistamiento {
+  background-color: rgb(19, 19, 27);
+  color: white;
+  width: 60%;
+  text-align: center;
+  border-radius: 0.7rem;
+  margin: 1rem 0px;
+  padding: 0 0 0.5rem 0;
+}
+
+.texto-avistamiento h3 {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.subtitulo-avistamiento {
+  font-size: 2rem;
+}
+
+.avistamiento button {
+  background-color: #8d090f;
+  color: rgb(213, 214, 214);
+  font-size: 1.3rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.avistamiento button a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.3rem 0.6remx;
+}
+
+.avistamiento button:hover {
+  background-color: #610000;
+  color: white;
+}
+
+.noticias-astro {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section {
+  width: 30%;
+  display: none;
+  background-color: #005aa7;
+}
+
+.resaltado {
+  background-color: yellow;
+}
+
+.separador-ciencia {
+  width: 0.1%;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0);
+}
+
+/*      Astronomia    */
+
+.articulo-astro {
+  padding: 1rem 0rem;
+}
+
+.articulo-astro-ciencia {
+  padding: 1rem 0rem;
+  width: 100%;
+}
+
+.body-astro {
+  display: flex;
+}
+
+.noticias-astro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+
+.noticias-astro p {
+  padding: 0.5rem 0.5rem;
+}
+
+.parrafo-articulo-ciencia {
+  width: 45%;
+}
+
+.noticias-astro h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.noticias-astro img {
+  width: 100%;
+  margin: 2rem 0 0px 0;
+}
+
+figcaption {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 0 0 1rem 0;
+}
+
+.image-articulo {
+  text-align: center;
+}
+
+.hr-astro {
+  height: 0.2rem;
+  background-color: #000000;
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.cabezera-body {
+  display: flex;
+  justify-content: space-between;
+}
+.cabezera-body-ciencia {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titulo-cabezera {
+  background-color: #bdc2c48c;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.fecha-act {
+  font-size: 0.7rem;
+  margin: 0.5rem;
+}
+
+.contenedor-lista h4 {
+  padding: 0 0.5rem;
+}
+
+.lista-astro {
+  padding: 1rem 2.5rem;
+  list-style: none;
+  list-style-image: url("../public/images/flecha.svg");
+}
+
+.lista-astro li {
+  padding: 0.5rem 0;
+}
+
+.cabezera-articulos {
+  padding: 0.5rem;
+  background-color: #489be4c9;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/*   Avistamientos    */
+
+.body-avistamiento {
+  padding: 1rem 0;
+  background-image: url("../public/images/astronauta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.formulario form {
+  text-align: left;
+  width: 80%;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: rgb(243, 243, 243);
+  border-radius: 0.2rem;
+  opacity: 0.8;
+}
+
+.formulario form h3 {
+  font-size: 2rem;
+}
+
+.formulario form h2 {
+  font-size: 1.2rem;
+  margin: 1.2rem 0 0.7rem 0;
+  text-align: center;
+  background-color: rgb(16, 17, 17);
+  color: white;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.formulario form > input[type="text"],
+.formulario form > input[type="Date"] {
+  width: 70%;
+  display: block;
+  margin: 0.6rem auto;
+  right: 0;
+  font-size: 1rem;
+  padding: 0.2rem;
+  text-align: center;
+  background-color: inherit;
+}
+
+.formulario input:focus {
+  outline: none;
+  outline-width: 0;
+  box-shadow: none;
+}
+
+.btn-registrar {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  color: #d3d2d2;
+  font-weight: bolder;
+  background-color: #131212;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.btn-registrar:hover {
+  background-color: rgb(138, 138, 138);
+  color: rgb(17, 16, 16);
+  transition: all 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario label {
+  width: 35%;
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+.select {
+  display: inline-block;
+}
+
+.formulario select {
+  font-size: 1rem;
+  padding: 0.2rem;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.checks {
+  position: relative;
+  width: 95%;
+}
+
+.opciones {
+  position: absolute;
+  text-align: left;
+  left: 30%;
+  top: 1rem;
+}
+
+div.section-captcha {
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 2rem 0px 1rem 0;
+  position: relative;
+  background-color: rgb(7, 7, 7);
+  border-radius: 0.3rem;
+  opacity: 1;
+}
+
+.label-captcha {
+  align-self: flex-start;
+  color: white;
+}
+
+.div-captcha {
+  align-self: right;
+  padding: 0.5rem;
+  width: 60%;
+  height: 4rem;
+  opacity: 1;
+}
+
+.div-captcha h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.3rem;
+  background-color: #295596;
+  border-radius: 3px;
+  color: rgb(225, 228, 228);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.confirmacion-captcha input {
+  margin: 2rem 0 1rem 0.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+  width: 58%;
+}
+
+.refrescar {
+  background-color: #05615c;
+  color: rgb(207, 197, 197);
+  border: none;
+  border-radius: 2px;
+  padding: 2px;
+  width: auto;
+}
+
+.refrescar:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.subtitulo-avistamiento {
+  color: white;
+  font-size: 2 5rem;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+
+.subtitulo-avistamiento h3 {
+  text-align: center;
+}
+
+.hr-av {
+  background-color: white;
+  height: 3px;
+  margin: 1rem auto;
+  width: 95%;
+}
+
+#cap-acep {
+  position: absolute;
+  width: 50%;
+  margin: auto 25%;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(26, 199, 84);
+  color: rgb(0, 0, 0);
+  top: 1rem;
+  border-radius: 10px;
+  display: none;
+}
+
+#cap-rec {
+  position: absolute;
+  bottom: 10rem;
+  right: 11%;
+  background-color: rgb(150, 19, 19);
+  color: white;
+  width: 25vw;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+}
+
+.mostrar-cap {
+  display: block !important;
+}
+
+.div-captcha span {
+  position: absolute;
+  top: 0.5rem;
+  right: 8rem;
+  background-color: #ccc;
+  color: #000000;
+  font-size: 1rem;
+  border-radius: 2px;
+  padding: 2px;
+  display: none;
+}
+
+form .section-captcha:hover span {
+  display: block;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.content-carousel {
+  padding: 1rem 0;
+  background: linear-gradient(to right, #fffde4, #005aa7);
+  margin: 0 0 2rem 0;
+}
+
+.imagen {
+  display: none;
+  width: 100%;
+}
+
+.imagen img {
+  width: 100%;
+  height: 200px;
+}
+
+.ocultar-img {
+  display: none;
+}
+
+.mostrar-img {
+  display: block;
+}
+
+#retroceder,
+#avanzar {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#avanzar {
+  right: 0;
+}
+
+#avanzar:hover,
+#retroceder:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: 0.7rem 0;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/*   ADMINISTRADOR   */
+
+.tabla {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0.7rem auto;
+  border-bottom: none;
+  font-size: 3vw;
+}
+
+table td {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+table th {
+  border-collapse: collapse;
+
+  padding: 0.1rem;
+  background-color: #514fbbbe;
+  color: beige;
+  text-align: center;
+}
+
+.tabla h3 {
+  padding: 0.5rem 0;
+  margin: 1rem 0 5px 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.nombre-fila {
+  background-color: #4476c2ec;
+  color: beige;
+}
+
+table tr:nth-child(odd) {
+  background-color: #00abe457;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(6, 250, 6, 0.24);
+}
+
+#objetos-avistados tr.planeta-cercano {
+  background-color: rgba(255, 0, 0, 0.493);
+}
+
+/* --------------------------  Formulario de Carga -----------------------------*/
+
+.formulario-carga {
+  width: 100%;
+  padding: 0rem;
+  margin: 3rem 0 0 0;
+}
+
+form.carga {
+  text-align: left;
+  width: 90%;
+  border: 1px solid rgb(129, 129, 129);
+  margin: 1rem auto;
+  padding: 0 0 0.5rem 0;
+  font-size: 1rem;
+  background-color: #fcfcfc;
+  border-radius: 0.2rem;
+  opacity: 1;
+}
+
+form h3 {
+  font-size: 2rem;
+}
+
+form h2 {
+  font-size: 1.2rem;
+  margin: 0rem 0 0.5rem 0;
+  text-align: center;
+  background-color: rgb(16, 17, 17);
+  color: white;
+  padding: 1rem 0;
+  border-radius: 0.2rem;
+}
+
+form input {
+  width: 12rem;
+  width: 43%;
+
+  display: inline-block;
+  margin: 0.2rem 0;
+  right: 0;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: none;
+  border: 0.1rem rgb(65, 65, 65) solid;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  text-align: right;
+}
+
+form.carga select {
+  width: 11.6rem;
+  display: inline-block;
+
+  margin: 0.2rem 0 0.2rem 9.3rem;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: none;
+  border: 0.1rem rgb(65, 65, 65) solid;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  text-align: right;
+}
+
+input:focus {
+  outline: none;
+  outline-width: 0;
+  box-shadow: none;
+}
+
+.btn-registrar {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.7rem auto;
+  font-size: 1.3rem;
+  color: #d3d2d2;
+  font-weight: bolder;
+  background-color: #131212;
+  border: none;
+  border-radius: 0.7rem;
+}
+
+.btn-registrar:hover {
+  background-color: rgb(71, 71, 71);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form label {
+  width: 9rem;
+  width: 43%;
+
+  display: inline-block;
+  padding: 0.2rem;
+  margin-left: 1rem;
+}
+
+.select {
+  align-self: flex-end;
+  margin-right: 3.5rem;
+}
+
+.tipo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  height: 2rem;
+}
+
+.opciones {
+  text-align: right;
+}
+
+.content-carga {
+  display: flex;
+  flex-direction: column;
+}
+
+form.busqueda {
+  width: 90%;
+  margin: 1rem auto;
+  background-color: #ccc;
+  padding: 0;
+}
+
+form.busqueda .input {
+  display: flex;
+  justify-content: space-around;
+}
+
+form.busqueda .input input {
+  width: 15%;
+  font-weight: bolder;
+  margin: 0.1rem 0.2rem;
+}
+
+form.busqueda .input #busqueda {
+  border: 1px solid rgb(0, 204, 255);
+  width: 50%;
+  background-color: #e6e6e6;
+  text-align: left;
+}
+
+form.busqueda .input #busqueda:focus {
+  border: 1px solid rgb(29, 42, 48);
+  background-color: #ffffff;
+}
+
+.btn-busqueda {
+  border: none;
+  background-color: black;
+  color: #adacac;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.btn-busqueda:hover {
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.registro-datos {
+  padding: 1rem 0 0 0;
+  background: linear-gradient(to right, #fffde4, #005aa7);
+}
+
+.subtitulo {
+  font-size: 1.8rem;
+  margin: 0 auto 1rem auto;
+  padding: 0 0.5rem;
+  text-align: center;
+  background-color: #42136e;
+  color: rgb(221, 220, 220);
+}
+
+.btnBorrar {
+  padding: 0.2rem;
+  background-color: darkred;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: inherit;
+  text-align: center;
+}
+
+.btnBorrar:hover {
+  color: white;
+}
+
+section.form-incorrecto {
+  width: 90%;
+  text-align: center;
+  background-color: #610c0c;
+  color: white;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+}
+
+section.form-correcto {
+  width: 90%;
+  text-align: center;
+  background-color: #129b00;
+  color: white;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+}
+
+.ocultar {
+  display: none !important;
+}
+
+.mostrar {
+  display: block !important;
+}
+
+.btnIco {
+  margin: 0.1rem;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+i {
+  font-size: 1.5rem;
+  color: #052c4e !important;
+}
+
+.col-del-edit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

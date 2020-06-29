@@ -1,0 +1,263 @@
+.tabla {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0.7rem auto;
+  border-bottom: none;
+  font-size: 3vw;
+}
+
+table td {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+table th {
+  border-collapse: collapse;
+
+  padding: 0.1rem;
+  background-color: #514fbbbe;
+  color: beige;
+  text-align: center;
+}
+
+.tabla h3 {
+  padding: 0.5rem 0;
+  margin: 1rem 0 5px 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.nombre-fila {
+  background-color: #4476c2ec;
+  color: beige;
+}
+
+table tr:nth-child(odd) {
+  background-color: #00abe457;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(6, 250, 6, 0.24);
+}
+
+#objetos-avistados tr.planeta-cercano {
+  background-color: rgba(255, 0, 0, 0.493);
+}
+
+/* --------------------------  Formulario de Carga -----------------------------*/
+
+.formulario-carga {
+  width: 100%;
+  padding: 0rem;
+  margin: 3rem 0 0 0;
+}
+
+form.carga {
+  text-align: left;
+  width: 90%;
+  border: 1px solid rgb(129, 129, 129);
+  margin: 1rem auto;
+  padding: 0 0 0.5rem 0;
+  font-size: 1rem;
+  background-color: #fcfcfc;
+  border-radius: 0.2rem;
+  opacity: 1;
+}
+
+form h3 {
+  font-size: 2rem;
+}
+
+form h2 {
+  font-size: 1.2rem;
+  margin: 0rem 0 0.5rem 0;
+  text-align: center;
+  background-color: rgb(16, 17, 17);
+  color: white;
+  padding: 1rem 0;
+  border-radius: 0.2rem;
+}
+
+form input {
+  width: 12rem;
+  width: 43%;
+
+  display: inline-block;
+  margin: 0.2rem 0;
+  right: 0;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: none;
+  border: 0.1rem rgb(65, 65, 65) solid;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  text-align: right;
+}
+
+form.carga select {
+  width: 11.6rem;
+  display: inline-block;
+
+  margin: 0.2rem 0 0.2rem 9.3rem;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: none;
+  border: 0.1rem rgb(65, 65, 65) solid;
+  border-radius: 0.2rem;
+  background-color: inherit;
+  text-align: right;
+}
+
+input:focus {
+  outline: none;
+  outline-width: 0;
+  box-shadow: none;
+}
+
+.btn-registrar {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.7rem auto;
+  font-size: 1.3rem;
+  color: #d3d2d2;
+  font-weight: bolder;
+  background-color: #131212;
+  border: none;
+  border-radius: 0.7rem;
+}
+
+.btn-registrar:hover {
+  background-color: rgb(71, 71, 71);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form label {
+  width: 9rem;
+  width: 43%;
+
+  display: inline-block;
+  padding: 0.2rem;
+  margin-left: 1rem;
+}
+
+.select {
+  align-self: flex-end;
+  margin-right: 3.5rem;
+}
+
+.tipo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  height: 2rem;
+}
+
+.opciones {
+  text-align: right;
+}
+
+.content-carga {
+  display: flex;
+  flex-direction: column;
+}
+
+form.busqueda {
+  width: 90%;
+  margin: 1rem auto;
+  background-color: #ccc;
+  padding: 0;
+}
+
+form.busqueda .input {
+  display: flex;
+  justify-content: space-between;
+}
+
+form.busqueda .input input {
+  width: 15%;
+  font-weight: bolder;
+  margin: 0.1rem 0.2rem;
+}
+
+form.busqueda .input #busqueda {
+  border: 1px solid rgb(0, 204, 255);
+  width: 35%;
+  background-color: #e6e6e6;
+  text-align: left;
+}
+
+form.busqueda .input #busqueda:focus {
+  border: 1px solid rgb(29, 42, 48);
+  background-color: #ffffff;
+}
+
+.btn-busqueda {
+  border: none;
+  background-color: black;
+  color: #adacac;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.btn-busqueda:hover {
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.registro-datos {
+  padding: 1rem 0 0 0;
+  background: linear-gradient(to right, #fffde4, #005aa7);
+}
+
+.subtitulo {
+  font-size: 1.8rem;
+  margin: 0 auto 1rem auto;
+  padding: 0 0.5rem;
+  text-align: center;
+  background-color: #42136e;
+  color: rgb(221, 220, 220);
+}
+
+.btnBorrar {
+  padding: 0.2rem;
+  background-color: darkred;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: inherit;
+  text-align: center;
+}
+
+.btnBorrar:hover {
+  color: white;
+}
+
+section.form-incorrecto {
+  width: 90%;
+  text-align: center;
+  background-color: #610c0c;
+  color: white;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+}
+
+/* --------------------------------    Formulario para la carga de registros en la fila-----------------------*/

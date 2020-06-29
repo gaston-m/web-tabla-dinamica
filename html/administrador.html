@@ -1,0 +1,120 @@
+<section class="registro-datos">
+  <h2 class="subtitulo">
+    Utilice esta sección para cargar en la base de datos los avistamientos
+    confirmados de los usuarios
+  </h2>
+
+  <div class="content-carga">
+    <div class="formulario-carga">
+      <form class="carga">
+        <h2>INGRESE LOS DATOS DEL OBJETO</h2>
+        <div class="input">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" />
+        </div>
+
+        <div class="tipo">
+          <label for="tipo">Tipo</label>
+          <div class="select">
+            <select name="tipo" id="tipo" value="galaxia">
+              <option value="galaxia">Galaxia</option>
+              <option value="estrella">Estrella</option>
+              <option value="asteroide">Asteroide</option>
+              <option value="planeta">Planeta</option>
+              <option value="cometa">Cometa</option>
+              <option value="cuasar">Cuasar</option>
+              <option value="nebulosa">Nebulosa</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="input">
+          <label for="distancia">Distancia (años luz)</label>
+          <input type="number" id="distancia" />
+        </div>
+
+        <div class="input">
+          <label for="fecha">Fecha del Avistamiento</label>
+          <input type="Date" id="fecha" />
+        </div>
+
+        <div class="input">
+          <label for="avistador">Nombre de quien lo descubrio</label>
+          <input type="text" id="avistador" />
+        </div>
+
+        <input
+          type="button"
+          value="Editar"
+          id="btn-cargar-editar"
+          class="btn-registrar ocultar"
+        />
+
+        <input
+          type="button"
+          value="Registrar"
+          id="btn-registrar"
+          class="btn-registrar"
+        />
+        <input
+          type="button"
+          value="Registrar 3 iguales"
+          id="btn-x3"
+          class="btn-registrar"
+        />
+        <section class="form-incorrecto"></section>
+        <section class="form-correcto"></section>
+      </form>
+    </div>
+    <div class="tabla">
+      <form class="busqueda">
+        <div class="input">
+          <input
+            type="text"
+            id="busqueda"
+            name="busqueda"
+            placeholder="Ingrese su busqueda"
+          />
+          <input
+            type="button"
+            value="Buscar"
+            id="btn-busqueda"
+            class="btn-busqueda"
+          />
+          <input
+            type="button"
+            value="Limpiar"
+            id="btn-limpiar"
+            class="btn-busqueda"
+          />
+        </div>
+      </form>
+      <table id="objetos-avistados">
+        <thead>
+          <tr>
+            <th>
+              Nombre
+            </th>
+            <th>
+              Tipo
+            </th>
+            <th>
+              Distancia (años luz)
+            </th>
+            <th>
+              Fecha Avistamiento
+            </th>
+            <th>
+              Avistador
+            </th>
+            <th>
+              Del/Edit
+            </th>
+          </tr>
+        </thead>
+        <tbody id="content-tabla"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="../js/administrador.js"></script>
+</section>
